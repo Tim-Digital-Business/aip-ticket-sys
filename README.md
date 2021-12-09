@@ -1,2 +1,2 @@
-# aip-ticket-sys
-Work or get fired xDD
+# AIP Ticket System
+Work or get fired.
