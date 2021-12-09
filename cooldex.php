@@ -17,7 +17,7 @@
   <body>
 
       <div>
-      <a href="index copy.php">
+        <a href="index copy.php">
         <img src="Dark.png" id="Dark">
         </a>
         <a href="https://www.aip.swiss/dienstleistungen/digitalbusiness">
