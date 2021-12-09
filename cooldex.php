@@ -32,7 +32,7 @@
         <p class="subtitle">Willkommen auf unseren kleinen Seite.</p>
         <p id="copyright">©Copyrigth 2021 Maël Schoch</p>
     <div class="button1">
-      <a href='faq.php';>
+      <a href="faq.php">
       <img src="FAQButton.png">
       </a>
       </div>
