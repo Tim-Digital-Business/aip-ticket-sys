@@ -17,7 +17,7 @@
   <body>
 
       <div>
-      <a href="coolex.php">
+      <a href="cooldex.php">
         <img src="Light.png" id="Light">
         </a>
         <a href="https://www.aip.swiss/dienstleistungen/digitalbusiness">
