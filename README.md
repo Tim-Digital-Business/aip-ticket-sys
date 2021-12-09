@@ -1,2 +1,2 @@
 # aip-ticket-sys
-Work or get fired xDD
+Work or get fired xD
