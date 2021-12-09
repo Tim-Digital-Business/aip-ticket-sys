@@ -21,14 +21,14 @@
 
 include "db_connect.php";
 $new_abteilung = $_GET["Abteilung"];
-$sql = "SELECT TicketID,Datum,Abteilung,Problem FROM ticket_table WHERE Abteilung LIKE '$new_abteilung'";
+$sql = "SELECT TicketID,Datum,Abteilung,Name,Problem FROM ticket_table WHERE Abteilung LIKE '$new_abteilung'";
 $result = $mysqli->query($sql);
 ?>
 <div id="accordion">
 <?php
 // output data of each row
 while($row = $result->fetch_assoc()) {
-echo "<h3>Ticket:$row[TicketID] $row[Datum]<hr>$row[Abteilung]</h3>";
+echo "<h3>Ticket:$row[TicketID] <br>$row[Datum]<hr>$row[Abteilung]: $row[Name]</h3>";
 echo "<div><p>$row[Problem]</p></div>";
 }
 ?>
