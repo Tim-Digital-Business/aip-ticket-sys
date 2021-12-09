@@ -27,7 +27,7 @@
         <img src="AIP.png" id="AIP">
         </a>      
         <a href="https://www.jsw.swiss/">
-        <img src="jsw.jpg" id="jsw">
+        <img src="jsw.png" id="jsw">
         </a>
         <p class="subtitle">Willkommen auf unseren kleinen Seite.</p>
         <p id="copyright">©Copyrigth 2021 Maël Schoch</p>
