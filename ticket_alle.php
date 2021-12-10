@@ -4,29 +4,29 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
   <script>
-  $( function() {
-    $( "#accordion" ).accordion();
-  } );
+    $(function() {
+      $("#accordion").accordion();
+    });
   </script>
-    <script>    
-    if(typeof window.history.pushState == 'function') {
-        window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF'];?>');
+  <script>
+    if (typeof window.history.pushState == 'function') {
+      window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF']; ?>');
     }
-</script>
+  </script>
 </head>
 
 <?php
-include "db_connect.php";
+include "DB/db_connect.php";
 #get DB content
 $sql = "SELECT TicketID,Datum,Abteilung,Name,Problem FROM ticket_table";
 $result = $mysqli->query($sql);
 ?>
 <div id="accordion">
-<?php
-// output data of each row
-while($row = $result->fetch_assoc()) {
-echo "<h3>Ticket:$row[TicketID] <br>$row[Datum]<hr>$row[Abteilung]: $row[Name]</h3>";
-echo "<div><p>$row[Problem]</p></div>";
-}
-?>
+  <?php
+  // output data of each row
+  while ($row = $result->fetch_assoc()) {
+    echo "<h3>Ticket:$row[TicketID] <br>$row[Datum]<hr>$row[Abteilung]: $row[Name]</h3>";
+    echo "<div><p>$row[Problem]</p></div>";
+  }
+  ?>
 </div>

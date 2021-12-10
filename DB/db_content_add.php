@@ -14,9 +14,9 @@ echo "<h2> Ticket wurde hinzugefügt</h2>";
 $sql = "INSERT into ticket_table(TicketID,Abteilung,Name,Problem) VALUES(null,'$new_abteilung','$new_name','$new_problem')";
 $result = $mysqli->query($sql);
 ?>
-  <script>    
-    if(typeof window.history.pushState == 'function') {
-        window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF'];?>');
-    }
+<script>
+  if (typeof window.history.pushState == 'function') {
+    window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF']; ?>');
+  }
 </script>
-<a href="index.php"> Zurück zur Hauptseite</a>
+<a href="../index.php"> Zurück zur Hauptseite</a>
