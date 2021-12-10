@@ -28,7 +28,7 @@ p {
 }
 
 .footer {
-  margin-left: 100px;
+  margin-left: 380px;
   opacity: 0.4;
 }
 .button1 {
@@ -41,13 +41,13 @@ p {
 
 #copyright {
   float: right;
-  margin-top: 600px;
+  margin-top: 780px;
   opacity: 0.2;
 }
 
 #Dark {
   border-radius: 10px;
-  margin-left: 5px;
+  padding-left: 10px;
 }
 
 body {
