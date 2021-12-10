@@ -3,7 +3,7 @@
 
 ## ✨ Setup Guide
 
-1. Clone Source code to your local machine.
+1. Clone Source code to your local machine
 2. Download XAMPP Control Panel: https://www.apachefriends.org/de/index.html
 3. Change *DocumentRoot* and *Directory* paths in the config file `httpd.conf` of Apache:
     - DocumentRoot & Directory from  `C:/xampp/htdocs` to -> `C:\<path to project>\aip-ticket-sys`
