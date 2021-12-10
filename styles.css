@@ -28,7 +28,7 @@ p {
 }
 
 .footer {
-  margin-left: 200px;
+  margin-left: 100px;
   opacity: 0.4;
 }
 .button1 {
@@ -41,7 +41,7 @@ p {
 
 #copyright {
   float: right;
-  margin-top: 850px;
+  margin-top: 600px;
   opacity: 0.2;
 }
 
