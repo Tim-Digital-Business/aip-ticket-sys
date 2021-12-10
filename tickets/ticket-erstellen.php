@@ -15,9 +15,9 @@
 <body>
   <title>Support Ticket erstellen</title>
   <?php
-  include "DB/db_connect.php";
+  require_once "../database/config.php";
   ?>
-  <form class="form-horizontal" action="DB/db_content_add.php">
+  <form class="form-horizontal" action="../database/db_content_add.php">
     <fieldset>
 
       <!-- Form Name -->
@@ -65,14 +65,14 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="submit"></label>
         <div class="col-md-4">
-          <button class="btn btn-info" onclick="window.location.href = 'index.php';">Zurück zur Hauptseite</button>
+          <button class="btn btn-info" onclick="window.location.href = '../index.php';">Zurück zur Hauptseite</button>
         </div>
       </div>
 
     </fieldset>
   </form>
   <?php
-  $mysqli->close();
+  mysqli_close($link);
   ?>
 
 

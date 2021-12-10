@@ -40,9 +40,9 @@
       <h1 class="display-3">Digital Business</h1>
       <p class="lead">Willkommen auf unseren kleinen Seite.</p>
       <p></p>
-      <button type="button" class="btn btn-success" onclick="window.location.href = 'faq.php';">FAQ</button>
-      <button type="button" class="btn btn-info" onclick="window.location.href = 'ticket-erstellen.php';">Ticket</button>
-      <button type="button" class="btn btn-info" onclick="window.location.href = 'Login/Welcome.php';">Login for Admins</button>
+      <button type="button" class="btn btn-success" onclick="window.location.href = 'faq/faq.php';">FAQ</button>
+      <button type="button" class="btn btn-info" onclick="window.location.href = 'tickets/ticket-erstellen.php';">Ticket</button>
+      <button type="button" class="btn btn-info" onclick="window.location.href = 'login/Welcome.php';">Login for Admins</button>
     </div>
 
     <footer class="footer">

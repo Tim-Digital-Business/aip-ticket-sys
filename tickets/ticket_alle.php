@@ -16,10 +16,10 @@
 </head>
 
 <?php
-include "DB/db_connect.php";
+require_once "../database/config.php";
 #get DB content
 $sql = "SELECT TicketID,Datum,Abteilung,Name,Problem FROM ticket_table";
-$result = $mysqli->query($sql);
+$result = $link->query($sql);
 ?>
 <div id="accordion">
   <?php
@@ -27,6 +27,7 @@ $result = $mysqli->query($sql);
   while ($row = $result->fetch_assoc()) {
     echo "<h3>Ticket:$row[TicketID] <br>$row[Datum]<hr>$row[Abteilung]: $row[Name]</h3>";
     echo "<div><p>$row[Problem]</p></div>";
+    mysqli_close($link);
   }
   ?>
 </div>

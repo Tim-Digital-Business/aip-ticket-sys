@@ -16,10 +16,11 @@
 
 
 <?php
-include "../DB/db_connect.php";
+require_once "../database/config.php";
 #get DB content
 $sql = "SELECT DISTINCT Abteilung FROM ticket_table";
-$result = $mysqli->query($sql);
+$result = $link->query($sql);
+mysqli_close($link);
 ?>
 <form class="form-horizontal">
   <fieldset>
@@ -46,8 +47,8 @@ $result = $mysqli->query($sql);
     <div class="form-group">
       <label class="col-md-4 control-label" for="button1id"></label>
       <div class="col-md-8">
-        <button id="button1id" name="buttonSearch" formaction="../DB/db_content_all.php" class="btn btn-default">Search</button>
-        <button id="button2id" name="buttonAll" formaction="../ticket_alle.php" class="btn btn-info">Search All</button>
+        <button id="button1id" name="buttonSearch" formaction="../database/db_content_all.php" class="btn btn-default">Search</button>
+        <button id="button2id" name="buttonAll" formaction="../tickets/ticket_alle.php" class="btn btn-info">Search All</button>
         <a href="../Login/welcome.php" class="btn btn-warning">Back</a>
       </div>
     </div>
