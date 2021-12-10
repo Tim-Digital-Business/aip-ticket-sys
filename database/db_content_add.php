@@ -1,5 +1,5 @@
 <?php
-include "db_connect.php";
+require_once "config.php";
 
 $new_abteilung = $_GET["abteilung"];
 $new_problem = $_GET["problemtxt"];
@@ -12,11 +12,12 @@ echo "<h2> Ticket wurde hinzugefügt</h2>";
 
 #get DB content
 $sql = "INSERT into ticket_table(TicketID,Abteilung,Name,Problem) VALUES(null,'$new_abteilung','$new_name','$new_problem')";
-$result = $mysqli->query($sql);
+$result = $link->query($sql);
+mysqli_close($link);
 ?>
-  <script>    
-    if(typeof window.history.pushState == 'function') {
-        window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF'];?>');
-    }
+<script>
+  if (typeof window.history.pushState == 'function') {
+    window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF']; ?>');
+  }
 </script>
-<a href="index.php"> Zurück zur Hauptseite</a>
+<a href="../index.php"> Zurück zur Hauptseite</a>
