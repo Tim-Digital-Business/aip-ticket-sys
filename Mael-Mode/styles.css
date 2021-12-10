@@ -24,12 +24,15 @@ p {
 }
 
 .subtitle {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .footer {
-  margin-left: 200px;
-  opacity: 0.4;
+  opacity: 0.3;
+  position: absolute;
+  bottom: 0px;
+  left: 16px;
+  font-size: 18px;
 }
 .button1 {
   margin: 0px 830px;
@@ -41,13 +44,12 @@ p {
 
 #copyright {
   float: right;
-  margin-top: 850px;
+  margin-top: 750px;
   opacity: 0.2;
 }
 
 #Dark {
-  border-radius: 10px;
-  margin-left: 5px;
+  margin: 30px 50px;
 }
 
 body {
@@ -60,4 +62,8 @@ body {
 .dark-mode {
   background-color: black;
   color: white;
+}
+
+#mael_mode {
+  padding: 200px;
 }

@@ -14,6 +14,14 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </script>
+  <style>
+    .bottomright {
+      position: absolute;
+      bottom: 8px;
+      right: 16px;
+      font-size: 10px;
+    }
+  </style>
 </head>
 
 <body>
@@ -47,7 +55,8 @@
 
     <footer class="footer">
   </div>
-  <p align="center">Jugendsozialwerk Pratteln</p>
+  <p align="center">Jugendsozialwerk Pratteln™</p>
+  <button type="button" class="bottomright btn btn-info" onclick="window.location.href = 'mael-mode/cooldex.php';">Mael-Mode</button>
   </footer>
 
   </div>
