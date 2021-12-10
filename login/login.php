@@ -1,4 +1,7 @@
 <?php
+
+include "../navbar.php";
+
 // Initialize the session
 session_start();
 
@@ -96,19 +99,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body {
-            font: 14px sans-serif;
-        }
+    body {
+        font: 14px sans-serif;
+    }
 
-        .wrapper {
-            width: 360px;
-            padding: 20px;
-        }
+    .wrapper {
+        width: 360px;
+        padding: 20px;
+    }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" style="margin-top: 100px">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
 
@@ -121,12 +124,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
                 <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <input type="text" name="username"
+                    class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>"
+                    value="<?php echo $username; ?>">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                <input type="password" name="password"
+                    class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">

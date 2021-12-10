@@ -1,5 +1,6 @@
 <?php
 require_once "config.php";
+include "../navbar.php";
 
 $new_abteilung = $_GET["abteilung"];
 $new_problem = $_GET["problemtxt"];
@@ -16,8 +17,11 @@ $result = $link->query($sql);
 mysqli_close($link);
 ?>
 <script>
-  if (typeof window.history.pushState == 'function') {
+if (typeof window.history.pushState == 'function') {
     window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF']; ?>');
-  }
+}
 </script>
-<a href="../index.php"> Zurück zur Hauptseite</a>
+<div class="margin-top: 70px">
+
+    <a href="../index.php"> Zurück zur Hauptseite</a>
+</div>
