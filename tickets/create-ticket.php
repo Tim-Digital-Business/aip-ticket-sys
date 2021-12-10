@@ -30,7 +30,7 @@
         <?php
   require_once "../database/config.php";
   ?>
-        <form class="form-horizontal" action="../tickets/list-tickets.php">
+        <form class="form-horizontal" action="../database/db_content_add.php">
 
             <!-- Select Basic -->
             <div class="form-group">
