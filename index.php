@@ -31,13 +31,13 @@
       <nav>
         <ul class="nav nav-pills float-right">
           <li class="nav-item">
-
+            <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-
+            <a class="nav-link" href="faq/faq.php">FAQ</a>
           </li>
           <li class="nav-item">
-
+            <a class="nav-link" href="login/login.php">Admin-Login</a>
           </li>
         </ul>
       </nav>
