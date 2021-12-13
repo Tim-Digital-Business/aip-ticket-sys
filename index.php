@@ -24,12 +24,23 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-
-
-
 <body>
 
-    <body>
+  <div class="container">
+    <div class="header clearfix">
+      <nav>
+        <ul class="nav nav-pills float-right">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq/faq.php">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login/login.php">Admin-Login</a>
+          </li>
+        </ul>
+      </nav>
         <?php include('navbar.php'); ?>
 
         <main role="main" class="container">
@@ -39,14 +50,8 @@
                 <p class="lead">Willkommen auf unserem Ticketverwaltungssystem</p>
             </div>
 
-            <!-- <button type="button" class="btn btn-success" onclick="window.location.href = 'faq/faq.php';">FAQ</button>
-            <button type="button" class="btn btn-info"
-                onclick="window.location.href = 'tickets/create-ticket.php';">Ticket</button>
-            <button type="button" class="btn btn-info" onclick="window.location.href = 'login/profile.php';">Login for
-                Admins</button> -->
-
             <div class="center">
-                <!-- <img class="img-fluid" src="/assets/home.jpg" height="1000" width="1500" style="border-radius: 100px"> -->
+                
             </div>
             <div class="center">
                 <img class="img-fluid" src="/assets/home.jpg" height="1000" width="1500" style="border-radius: 100px">
