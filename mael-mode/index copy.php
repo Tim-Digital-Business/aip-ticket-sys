@@ -37,7 +37,7 @@
       </a>
       </div>
       <div class="button2">
-      <a href='ticket-erstellen.php';>
+      <a href='create-ticket.php';>
       <img src="TicketButton.png">
       </a>
     </div>
