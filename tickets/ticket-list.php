@@ -26,23 +26,23 @@
         </div>
 
         <?php
-      require "../database/config.php";
-      include('../navbar.php');
+        require "../database/config.php";
+        include('../navbar.php');
 
-#get DB content
-$sql = "SELECT TicketID,Datum,Abteilung,Name,Problem FROM ticket_table";
-$result = $link->query($sql);
-?>
+        #get DB content
+        $sql = "SELECT TicketID,Datum,Abteilung,Name,Problem FROM ticket_table";
+        $result = $link->query($sql);
+        ?>
         <div style="margin-top: 100px;" id="accordion">
             <?php
-  // output data of each row
-//   while ($row = $result->fetch_assoc()) {
-//     echo "<h3>Ticket:$row[TicketID] <br>$row[Datum]<hr>$row[Abteilung]: $row[Name]</h3>";
-//     echo "<div><p>$row[Problem]</p></div>";
-//     mysqli_close($link);
-//   }
-  
-  echo "
+            // output data of each row
+            //   while ($row = $result->fetch_assoc()) {
+            //     echo "<h3>Ticket:$row[TicketID] <br>$row[Datum]<hr>$row[Abteilung]: $row[Name]</h3>";
+            //     echo "<div><p>$row[Problem]</p></div>";
+            //     mysqli_close($link);
+            //   }
+
+            echo "
   <table class='table'>
       <thead class='thead-dark'>
           <tr>
@@ -54,8 +54,8 @@ $result = $link->query($sql);
           </tr>
       </thead>";
 
-  while ($row = $result -> fetch_assoc()) {
-    echo "
+            while ($row = $result->fetch_assoc()) {
+                echo "
         <tr>
             <th scope='row'>$row[TicketID]</th>
             <td>$row[Abteilung]</td>
@@ -64,12 +64,12 @@ $result = $link->query($sql);
             <td>$row[Datum]</td>
         </tr>
     ";
-    // mysqli_close($link);
-  }
-  echo "</tbody>
+                // mysqli_close($link);
+            }
+            echo "</tbody>
   </table>";
 
-  ?>
+            ?>
         </div>
     </div>
 

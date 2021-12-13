@@ -35,11 +35,11 @@ mysqli_close($link);
             <div class="col-md-4">
                 <select name="Abteilung">
                     <?php
-          while ($rows = $result->fetch_assoc()) {
-            $abteilung_name = $rows['Abteilung'];
-            echo "<option value='$abteilung_name'>$abteilung_name</option>";
-          }
-          ?>
+                    while ($rows = $result->fetch_assoc()) {
+                        $abteilung_name = $rows['Abteilung'];
+                        echo "<option value='$abteilung_name'>$abteilung_name</option>";
+                    }
+                    ?>
                 </select>
             </div>
         </div>
@@ -52,7 +52,7 @@ mysqli_close($link);
                     class="btn btn-default">Search</button>
                 <button id="button2id" name="buttonAll" formaction="../tickets/ticket_alle.php"
                     class="btn btn-info">Search All</button>
-                <a href="../Login/welcome.php" class="btn btn-warning">Back</a>
+                <a href="../Login/profile.php" class="btn btn-warning">Back</a>
             </div>
         </div>
 

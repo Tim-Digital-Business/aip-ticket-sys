@@ -23,9 +23,12 @@ if (typeof window.history.pushState == 'function') {
 
 <html>
 
-<div style="margin-top: 100px">
+<div class="d-flex justify-content-center" style="margin-top: 100px;">
     <h2>Ticket wurde erfolgreich hinzugefügt!</h2>
-    <a href="../index.php"> Zurück zur Hauptseite</a>
+</div>
+<div class="d-flex justify-content-center" style="margin-top: 20px;">
+    <button class="btn btn-primary my-2 my-sm-0" type="button" onclick="window.location.href='../index.php';">Zurück
+        zur Hauptseite</button>
 </div>
 
 </html>

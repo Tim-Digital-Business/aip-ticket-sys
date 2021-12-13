@@ -20,21 +20,21 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <title>AIP Ticket System</title>
 
     <style>
-    body {
-        text-align: center;
-        margin-top: 100px;
-    }
+        body {
+            text-align: center;
+            margin-top: 100px;
+        }
     </style>
 </head>
 
 <body>
 
-    <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to the Admin Page.
+    <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. profile to the Admin Page.
     </h1>
     <p>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
-        <a href="admin-index.php" class="btn btn-info ml-3">Open Ticket Site</a>
+        <a href="../tickets/ticket-list.php" class="btn btn-info ml-3">Open Ticket Site</a>
     </p>
 </body>
 

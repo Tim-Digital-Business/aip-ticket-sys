@@ -13,8 +13,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Place your stylesheet here -->
     <link href="/css/stylesheet.css" rel="stylesheet" type="text/css">
@@ -29,8 +28,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="/">Ticket System</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -43,10 +41,10 @@
                     <a class="nav-link" href="/faq/faq.php">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/tickets/list-tickets.php" tabindex="-1">Tickets</a>
+                    <a class="nav-link" href="/tickets/ticket-list.php" tabindex="-1">Tickets</a>
                 </li>
                 <!-- <li class="nav-item">
-                    <a class="nav-link" href="/login/Welcome.php" tabindex="-2">Login</a>
+                    <a class="nav-link" href="/login/profile.php" tabindex="-2">Login</a>
                 </li> -->
                 <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
@@ -60,13 +58,12 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
-                <button class="btn btn-primary my-2 my-sm-0" type="button"
-                    onclick="window.location.href='../tickets/create-ticket.php';">Ticket erfassen</button>
+                <button class="btn btn-primary my-2 my-sm-0" type="button" onclick="window.location.href='../tickets/create-ticket.php';">Ticket erfassen</button>
             </form>
             <!-- <i class="far fa-user-circle"></i> -->
             <div style="margin-left: 15px;">
 
-                <a href="/login/welcome.php">
+                <a href="/login/profile.php">
                     <img src="/assets/account.svg" width="25" height="25"></a>
             </div>
 
