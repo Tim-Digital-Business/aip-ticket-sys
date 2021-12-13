@@ -60,10 +60,9 @@
             <td>$row[Abteilung]</td>
             <td>$row[Name]</td>
             <td>$row[Problem]</td>
-            <td>$row[Datum]</td>";
-                echo "
-            <td><a href='delete.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Delete</button></a></td>";
-                echo "</tr>";
+            <td>$row[Datum]</td>
+            <td><a href='delete.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Delete</button></a></td>
+                </tr>";
             }
             echo "</tbody>
   </table>";
