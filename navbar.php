@@ -46,7 +46,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
-                <button class="btn btn-primary my-2 my-sm-0" type="button" onclick="window.location.href='../tickets/create-ticket.php';">Ticket erfassen</button>
+                <button class="btn btn-primary my-2 my-sm-0" data-toggle="modal" data-target="#myModal" type="button">Ticket erfassen</button>
             </form>
             <!-- <i class="far fa-user-circle"></i> -->
             <div style="margin-left: 15px;">

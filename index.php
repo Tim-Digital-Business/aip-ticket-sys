@@ -26,7 +26,10 @@
 </head>
 
 <body>
-  <?php include('navbar.php'); ?>
+  <?php include('navbar.php');
+  include('modal.php');
+
+  ?>
 
   <main role="main" class="container">
 
