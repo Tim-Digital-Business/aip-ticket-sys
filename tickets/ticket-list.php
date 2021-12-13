@@ -5,15 +5,19 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script>
-    $(function() {
-        $("#accordion").accordion();
-    });
+        $(function() {
+            $("#accordion").accordion();
+        });
     </script>
     <script>
-    if (typeof window.history.pushState == 'function') {
-        window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF']; ?>');
-    }
+        if (typeof window.history.pushState == 'function') {
+            window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF']; ?>');
+        }
     </script>
 </head>
 
@@ -35,12 +39,6 @@
         ?>
         <div style="margin-top: 100px;" id="accordion">
             <?php
-            // output data of each row
-            //   while ($row = $result->fetch_assoc()) {
-            //     echo "<h3>Ticket:$row[TicketID] <br>$row[Datum]<hr>$row[Abteilung]: $row[Name]</h3>";
-            //     echo "<div><p>$row[Problem]</p></div>";
-            //     mysqli_close($link);
-            //   }
 
             echo "
   <table class='table'>
@@ -51,6 +49,7 @@
               <th scope='col'>Name</th>
               <th scope='col'>Problem</th>
               <th scope='col'>Erfasst am</th>
+              <th scope='col'></th>
           </tr>
       </thead>";
 
@@ -61,10 +60,10 @@
             <td>$row[Abteilung]</td>
             <td>$row[Name]</td>
             <td>$row[Problem]</td>
-            <td>$row[Datum]</td>
-        </tr>
-    ";
-                // mysqli_close($link);
+            <td>$row[Datum]</td>";
+                echo "
+            <td><a href='delete.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Delete</button></a></td>";
+                echo "</tr>";
             }
             echo "</tbody>
   </table>";
