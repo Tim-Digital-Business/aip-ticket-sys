@@ -1,7 +1,4 @@
 <?php
-
-include "../navbar.php";
-
 // Initialize the session
 session_start();
 
@@ -13,7 +10,6 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 
 // Include config file
 require_once "../database/config.php";
-
 // Define variables and initialize with empty values
 $username = $password = "";
 $username_err = $password_err = $login_err = "";
@@ -89,6 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Close connection
     mysqli_close($link);
 }
+include "../navbar.php";
 ?>
 
 <!DOCTYPE html>
@@ -136,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" value="Login">
                 </div>
-                <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+                <!-- <p>Don't have an account? <a href="register.php">Sign up now</a>.</p> -->
             </form>
         </div>
     </div>

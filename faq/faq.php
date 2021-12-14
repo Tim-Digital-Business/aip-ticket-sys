@@ -12,7 +12,6 @@
 
     <div style="margin-bottom: 60px">
         <?php include('../navbar.php'); ?>
-        <?php include('modal.php'); ?>
     </div>
 
     <main role="main" class="container">
