@@ -60,15 +60,19 @@
             <td>$row[Problem]</td>
             <td>$row[Datum]</td>
             <td>$row[Assign]</td>
-            <td><a><button type='button' class='btn btn-info' data-toggle='modal' data-target='#myModal2'>Assign</button></td>
+            <td></td>
+            <td><button data-toggle='modal' data-id='$row1' onclick=\"$('#dataid').text($(this).data('id')); $('#myModal2').modal('show');\">Click11 </button></td>
             <td><a href='delete.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Delete</button></a></td>
                 </tr>";
             }
             echo "</tbody>
   </table>";
 
+
             ?>
+
         </div>
+
     </div>
 
 </body

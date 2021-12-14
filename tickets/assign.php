@@ -1,16 +1,15 @@
 <?php
-
-$id = $_GET['id'];
-$assignname = $_GET['assign'];
 //Connect DB
 //Create query based on the ID passed from you table
 //query : delete where id = $id
 // on success delete : redirect the page to original page using header() method
 require_once "../database/config.php";
+include "modal-assign.php";
 // Check connection
-
+$id = $_GET['Key'];
+$assignname = $_GET['assign'];
 // sql to delete a record
-$sql = "UPDATE ticket_table SET Assign=$assignname WHERE TicketID = $id";
+$sql = "UPDATE ticket_table SET Assign='$assignname' WHERE TicketID = '$id'";
 
 if (mysqli_query($link, $sql)) {
     mysqli_close($link);
