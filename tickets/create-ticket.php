@@ -28,8 +28,8 @@
         </div>
 
         <?php
-  require_once "../database/config.php";
-  ?>
+        require_once "../database/config.php";
+        ?>
         <form class="form-horizontal" action="../database/db_content_add.php">
 
             <!-- Select Basic -->
@@ -64,8 +64,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="nametxt">Name:</label>
                 <div class="col-md-4">
-                    <input id="nametxt" name="nametxt" type="text" placeholder="z.B. Marcel Hauser"
-                        class="form-control input-md" required="">
+                    <input id="nametxt" name="nametxt" type="text" placeholder="z.B. Marcel Hauser" class="form-control input-md" required>
                 </div>
             </div>
 
@@ -86,8 +85,8 @@
             </div>
         </form>
         <?php
-  mysqli_close($link);
-  ?>
+        mysqli_close($link);
+        ?>
     </main>
 
 
