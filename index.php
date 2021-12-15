@@ -2,8 +2,8 @@
 <html lang="en">
 
 <body>
-  <?php include('navbar.php');
-
+  <?php include 'navbar.php';
+  include "inc/head.php";
   ?>
 
   <main role="main" class="container">
