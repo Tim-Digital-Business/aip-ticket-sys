@@ -9,7 +9,7 @@
         <?php
         require_once "../database/config.php";
         include_once('../navbar.php');
-        include('modal-assign.php');
+        include_once('modal-assign.php');
         include_once "../inc/head.php";
         #get DB content
         $sql = "SELECT TicketID,Datum,Abteilung,Name,Problem,Assign FROM ticket_table";

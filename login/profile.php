@@ -1,5 +1,7 @@
 <?php
-include('../navbar.php');
+include_once('../navbar.php');
+include_once "../inc/head.php";
+include_once "reset-password-modal.php";
 // Initialize the session
 if (!isset($_SESSION)) {
     session_start();
@@ -11,9 +13,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login.php");
     exit;
 }
-?>
-<?php include_once "../inc/head.php";
-include_once "reset-password-modal.php";
 ?>
 
 <body>
