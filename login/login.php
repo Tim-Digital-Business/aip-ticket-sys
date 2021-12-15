@@ -1,6 +1,9 @@
 <?php
 // Initialize the session
-session_start();
+if (!isset($_SESSION)) {
+    session_start();
+}
+
 
 // Check if the user is already logged in, if yes then redirect him to profile page
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
@@ -85,16 +88,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Close connection
     mysqli_close($link);
 }
-include "../navbar.php";
 ?>
+<?php include "../inc/head.php";
+include "../navbar.php"; ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<body>
     <style>
         body {
             font: 14px sans-serif;
@@ -105,9 +103,6 @@ include "../navbar.php";
             padding: 20px;
         }
     </style>
-</head>
-
-<body>
     <div class="d-flex justify-content-center">
         <div class="wrapper" style="margin-top: 70px;">
             <h2>Login</h2>
@@ -133,10 +128,7 @@ include "../navbar.php";
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" value="Login">
                 </div>
-                <!-- <p>Don't have an account? <a href="register.php">Sign up now</a>.</p> -->
             </form>
         </div>
     </div>
 </body>
-
-</html>

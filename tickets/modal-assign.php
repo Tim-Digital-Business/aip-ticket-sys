@@ -6,10 +6,9 @@
             <div class="modal-header">
                 <h4 class="modal-title">Ticket zuordnen</h4>
             </div>
-            <?php $dataid = '<span id="dataid"/>'; ?>
             <!-- Modal body -->
             <div class="modal-body" style="text-align: initial;">
-                <form id='myForm' action='assign.php' methode='post'>
+                <form id='myForm' action='assign.php'>
                     <input class="form-control" type="hidden">
                     <div class="form-group">
                         <label col-md-4 control-label>Zuordnen:*</label>
@@ -18,25 +17,23 @@
                                 <option value="Tim">Tim</option>
                                 <option value="Josua">Josua</option>
                                 <option value="Raphael">Raphael</option>
-                                <option value="Küche">Küche</option>
-                                <option value="Restwert">Restwert</option>
-                                <option value="Velos für Afrika">Velos für Afrika</option>
-                                <option value="Verpacken und Versenden">Verpacken und Versenden</option>
+                                <option value="Jessica">Küche</option>
+                                <option value="Babete">Restwert</option>
+                                <option value="Lorenzo">Lorenzo</option>
+                                <option value="Sammy">Verpacken und Versenden</option>
                             </select>
                         </div>
                     </div>
                     <input type='hidden' id="dataid" value=''>
                     <button type='submit' id='submitButton' onclick='submitHandler()' class="btn btn-primary">Zuordnen</button>
                     <button type="button" class="btn btn-danger float-right" data-dismiss="modal">Close</button>
-
-
-
                 </form>
                 <script>
                     function submitHandler() {
                         submitVal = $('#dataid').text();
                         $('#myForm').append("<input type='hidden' name='id' value='" +
                             submitVal + "' />");
+                        console.log(submitVal);
                         return true;
                     }
                 </script>
