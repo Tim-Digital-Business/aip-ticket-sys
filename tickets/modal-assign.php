@@ -26,7 +26,7 @@
                             </select>
                         </div>
                     </div>
-                    <input type="hidden" id="Key" name="Key" value="<?= $dataid ?>">
+                    <input type="hidden" id="Key" name="Key" value="">
                     <button type='submit' class="btn btn-primary">Zuordnen</button>
                     <button type="button" class="btn btn-danger float-right" data-dismiss="modal">Close</button>
                 </form>
