@@ -6,11 +6,11 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script>
+    <!-- <script>
         if (typeof window.history.pushState == 'function') {
             window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF']; ?>');
         }
-    </script>
+    </script> -->
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         </div>
 
         <?php
-        require "../database/config.php";
+        require_once "../database/config.php";
         include('../navbar.php');
         include('modal-assign.php');
         #get DB content
@@ -57,8 +57,7 @@
             <td>$row[Problem]</td>
             <td>$row[Datum]</td>
             <td>$row[Assign]</td>
-            <td></td>
-            <td><button data-toggle='modal' data-id='$row1' onclick=\"$('#dataid').text($(this).data('id')); $('#myModal2').modal('show');\">Click11 </button></td>
+            <td><button class='btn btn-info' data-toggle='modal' data-id='$row1' onclick=\"$('#dataid').text($(this).data('id'));$('#myModal2').modal('show');\">Assign</button></td>
             <td><a href='delete.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Delete</button></a></td>
                 </tr>";
             }
@@ -72,4 +71,4 @@
 
     </div>
 
-</body
+</body>

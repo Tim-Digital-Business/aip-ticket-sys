@@ -2,15 +2,14 @@
 <div class="modal fade" id="myModal2">
     <div class="modal-dialog">
         <div class="modal-content">
-
             <!-- Modal Header -->
             <div class="modal-header">
                 <h4 class="modal-title">Ticket zuordnen</h4>
             </div>
-
+            <?php $dataid = '<span id="dataid"/>'; ?>
             <!-- Modal body -->
             <div class="modal-body" style="text-align: initial;">
-                <form action='assign.php'>
+                <form id='myForm' action='assign.php' methode='post'>
                     <input class="form-control" type="hidden">
                     <div class="form-group">
                         <label col-md-4 control-label>Zuordnen:*</label>
@@ -26,12 +25,21 @@
                             </select>
                         </div>
                     </div>
-                    <input type="hidden" id="Key" name="Key" value="">
-                    <button type='submit' class="btn btn-primary">Zuordnen</button>
+                    <input type='hidden' id="dataid" value=''>
+                    <button type='submit' id='submitButton' onclick='submitHandler()' class="btn btn-primary">Zuordnen</button>
                     <button type="button" class="btn btn-danger float-right" data-dismiss="modal">Close</button>
+
+
+
                 </form>
-
-
+                <script>
+                    function submitHandler() {
+                        submitVal = $('#dataid').text();
+                        $('#myForm').append("<input type='hidden' name='id' value='" +
+                            submitVal + "' />");
+                        return true;
+                    }
+                </script>
             </div>
 
         </div>
