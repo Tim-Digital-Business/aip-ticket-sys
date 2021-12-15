@@ -1,22 +1,9 @@
 <html>
 
-<head>
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </script>
-    <link rel="icon" href="/assets/AIPfavicon.ico">
-
-</head>
-
 <body>
     <div style="margin-bottom: 60px">
-        <?php include('../navbar.php'); ?>
+        <?php include_once('../navbar.php');
+        include_once "../inc/head.php" ?>
     </div>
     <title>Support Ticket erstellen</title>
 

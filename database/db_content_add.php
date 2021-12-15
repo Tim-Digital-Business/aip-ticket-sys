@@ -1,6 +1,6 @@
 <?php
 require_once "config.php";
-include "../navbar.php";
+include_once "../navbar.php";
 
 $new_abteilung = $_GET["abteilung"];
 $new_problem = $_GET["problemtxt"];
@@ -16,9 +16,9 @@ mysqli_close($link);
 ?>
 
 <script>
-if (typeof window.history.pushState == 'function') {
-    window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF']; ?>');
-}
+    if (typeof window.history.pushState == 'function') {
+        window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF']; ?>');
+    }
 </script>
 
 <html>

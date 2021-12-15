@@ -89,8 +89,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mysqli_close($link);
 }
 ?>
-<?php include "../inc/head.php";
-include "../navbar.php"; ?>
+<?php include_once "../inc/head.php";
+include_once "../navbar.php"; ?>
 
 <body>
     <style>

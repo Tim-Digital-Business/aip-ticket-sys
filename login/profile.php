@@ -12,8 +12,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     exit;
 }
 ?>
-<?php include "../inc/head.php";
-include "reset-password.php";
+<?php include_once "../inc/head.php";
+include_once "reset-password-modal.php";
 ?>
 
 <body>
