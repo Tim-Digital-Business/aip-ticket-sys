@@ -14,13 +14,14 @@
                         <label col-md-4 control-label>Zuordnen:*</label>
                         <div>
                             <select name="assign" required>
-                                <option value="Tim">Tim</option>
+                                <option value="Babete">Babete</option>
+                                <option value="Jessica">Jessica</option>
                                 <option value="Josua">Josua</option>
-                                <option value="Raphael">Raphael</option>
-                                <option value="Jessica">Küche</option>
-                                <option value="Babete">Restwert</option>
                                 <option value="Lorenzo">Lorenzo</option>
-                                <option value="Sammy">Verpacken und Versenden</option>
+                                <option value="Raphael">Raphael</option>
+                                <option value="Sammy">Sammy</option>
+                                <option value="Tim">Tim</option>
+                                <option value="Ulf">Ulf</option>
                             </select>
                         </div>
                     </div>
