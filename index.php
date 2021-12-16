@@ -24,8 +24,6 @@
 <body>
 
   <section data-bs-version="5.1" class="menu menu1 cid-sRc7rtfrMl" once="menu" id="menu1-k">
-
-
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
       <div class="container">
         <div class="navbar-brand">
@@ -50,11 +48,6 @@
   </section>
 
   <section data-bs-version="5.1" class="header13 cid-sRc7vFQ6FN mbr-fullscreen mbr-parallax-background" id="header13-l">
-
-
-
-
-
     <div class="align-center container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
