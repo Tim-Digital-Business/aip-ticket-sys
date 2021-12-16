@@ -58,7 +58,7 @@
 
 
     <section data-bs-version="5.1" class="content17 cid-sRc7CKH74t" id="content17-n">
-      <div class="container">
+      <div class="container" style='width:780px'>
 
         <div class="row justify-content-center">
           <div class="col-12 col-md-10">
@@ -70,7 +70,7 @@
             <div id="bootstrap-toggle" class="toggle-panel accordionStyles tab-content">
               <div class="card mb-3">
                 <div class="card-header" role="tab" id="headingOne">
-                  <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_2" aria-expanded="false" aria-controls="collapse1">
+                  <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_2" aria-expanded="true" aria-controls="collapse1">
                     <h6 class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>How to create more items in this list?</strong>
                     </h6>
                     <span class="sign mbr-iconfont mbri-arrow-down"></span>
