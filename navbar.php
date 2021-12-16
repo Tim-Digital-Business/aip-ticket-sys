@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include_once('tickets/modal-create-ticket.php');
+// include_once('head.php');
+?>
 
 <head>
     <meta charset="utf-8">
@@ -14,9 +16,6 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Place your stylesheet here -->
-    <link href="/css/stylesheet.css" rel="stylesheet" type="text/css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -40,23 +39,25 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/faq/faq.php">FAQ</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="/tickets/ticket-list.php" tabindex="-1">Tickets</a>
-                </li>
+                </li> -->
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
-                <button class="btn btn-primary my-2 my-sm-0" type="button" onclick="window.location.href='../tickets/create-ticket.php';">Ticket erfassen</button>
+                <button class="btn btn-primary my-2 my-sm-0" data-toggle="modal" data-target="#myModal" type="button">Ticket erfassen</button>
             </form>
             <!-- <i class="far fa-user-circle"></i> -->
             <div style="margin-left: 15px;">
 
-                <a href="/login/profile.php">
+                <a href="/auth/profile.php">
                     <img src="/assets/account.svg" width="25" height="25"></a>
             </div>
 
         </div>
     </nav>
 </body>
-
-</html>
+</div>
+</nav>
+</body>
+</body>

@@ -1,22 +1,11 @@
 <html>
 
-<head>
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </script>
-    <link rel="icon" href="/assets/AIPfavicon.ico">
-
-</head>
-
 <body>
     <div style="margin-bottom: 60px">
-        <?php include('../navbar.php'); ?>
+        <?php
+        include_once('../navbar.php');
+        include_once('../inc/head.php');
+        ?>
     </div>
     <title>Support Ticket erstellen</title>
 
@@ -28,9 +17,9 @@
         </div>
 
         <?php
-  require_once "../database/config.php";
-  ?>
-        <form class="form-horizontal" action="../database/db_content_add.php">
+        require_once "../database/config.php";
+        ?>
+        <form class="form-horizontal" action="../database/confirm-add-ticket.php">
 
             <!-- Select Basic -->
             <div class="form-group">
@@ -64,8 +53,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="nametxt">Name:</label>
                 <div class="col-md-4">
-                    <input id="nametxt" name="nametxt" type="text" placeholder="z.B. Marcel Hauser"
-                        class="form-control input-md" required="">
+                    <input id="nametxt" name="nametxt" type="text" placeholder="z.B. Marcel Hauser" class="form-control input-md" required>
                 </div>
             </div>
 
@@ -86,8 +74,8 @@
             </div>
         </form>
         <?php
-  mysqli_close($link);
-  ?>
+        mysqli_close($link);
+        ?>
     </main>
 
 
