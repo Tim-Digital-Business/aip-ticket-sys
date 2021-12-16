@@ -51,7 +51,7 @@
     <div class="align-center container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
-          <h1 class="text-white mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Digital Business</strong></h1>
+          <h1 style='text-shadow: 3px 3px #000000' class="text-white mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Digital Business</strong></h1>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-10">
             <div class="section-head align-center mb-4">
-              <h3 class="text-white mbr-section-title mb-0 mbr-fonts-style display-2"><strong>FAQ</strong>
+              <h3 style='text-shadow: 3px 3px #000000' class="text-white mbr-section-title mb-0 mbr-fonts-style display-2"><strong>FAQ</strong>
               </h3>
             </div>
 
@@ -71,14 +71,14 @@
               <div class="card mb-3">
                 <div class="card-header" role="tab" id="headingOne">
                   <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_2" aria-expanded="true" aria-controls="collapse1">
-                    <h6 class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>How to create more items in this list?</strong>
+                    <h6 style='text-shadow: 3px 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>How to create more items in this list?</strong>
                     </h6>
                     <span class="sign mbr-iconfont mbri-arrow-down"></span>
                   </a>
                 </div>
                 <div id="collapse1_2" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
                   <div class="panel-body">
-                    <p class="text-white mbr-fonts-style panel-text display-7">The number of items is limited in this block. Open
+                    <p style='text-shadow: 3px 3px #000000' class="text-white mbr-fonts-style panel-text display-7">The number of items is limited in this block. Open
                       the Block parameters to change the amount of items.</p>
                   </div>
                 </div>
@@ -86,7 +86,7 @@
               <div class="card mb-3">
                 <div class="card-header" role="tab" id="headingTwo">
                   <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_2" aria-expanded="false" aria-controls="collapse2">
-                    <h6 class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>What is Mobirise Kit?</strong>
+                    <h6 style='text-shadow: 3px 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>What is Mobirise Kit?</strong>
                     </h6>
                     <span class="sign mbr-iconfont mbri-arrow-down"></span>
                   </a>
@@ -94,35 +94,35 @@
                 </div>
                 <div id="collapse2_2" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
                   <div class="panel-body">
-                    <p class="text-white mbr-fonts-style panel-text display-7">Mobirise Kit is a service that provides the access to all current and new themes/extensions developed by Mobirise. New themes/extensions are released every month and will be available in your account during your plan period, without any additional charge.</p>
+                    <p style='text-shadow: 3px 3px #000000' class="text-white mbr-fonts-style panel-text display-7">Mobirise Kit is a service that provides the access to all current and new themes/extensions developed by Mobirise. New themes/extensions are released every month and will be available in your account during your plan period, without any additional charge.</p>
                   </div>
                 </div>
               </div>
               <div class="card mb-3">
                 <div class="card-header" role="tab" id="headingThree">
                   <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_2" aria-expanded="false" aria-controls="collapse3">
-                    <h6 class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Can I create sites for commerical projects?</strong>
+                    <h6 style='text-shadow: 3px 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Can I create sites for commerical projects?</strong>
                     </h6>
                     <span class="sign mbr-iconfont mbri-arrow-down"></span>
                   </a>
                 </div>
                 <div id="collapse3_2" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
                   <div class="panel-body">
-                    <p class="text-white mbr-fonts-style panel-text display-7">Yes, Mobirise is free for both non-profit and commercial sites.</p>
+                    <p style='text-shadow: 3px 3px #000000' class="text-white mbr-fonts-style panel-text display-7">Yes, Mobirise is free for both non-profit and commercial sites.</p>
                   </div>
                 </div>
               </div>
               <div class="card mb-3">
                 <div class="card-header" role="tab" id="headingThree">
                   <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_2" aria-expanded="false" aria-controls="collapse4">
-                    <h6 class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>What is Code Editor?</strong>
+                    <h6 style='text-shadow: 3px 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>What is Code Editor?</strong>
                     </h6>
                     <span class="sign mbr-iconfont mbri-arrow-down"></span>
                   </a>
                 </div>
                 <div id="collapse4_2" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
                   <div class="panel-body">
-                    <p class="text-white mbr-fonts-style panel-text display-7">
+                    <p style='text-shadow: 3px 3px #000000' class="text-white mbr-fonts-style panel-text display-7">
                       This extension allows editing the code of block in the app. Also, it's possible to add code to the head and body parts of pages.</p>
                   </div>
                 </div>
@@ -130,13 +130,13 @@
               <div class="card mb-3">
                 <div class="card-header" role="tab" id="headingThree">
                   <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_2" aria-expanded="false" aria-controls="collapse5">
-                    <h6 class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>What is Mobirise Kit?</strong></h6>
+                    <h6 style='text-shadow: 3px 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>What is Mobirise Kit?</strong></h6>
                     <span class="mbr-iconfont mobi-mbri-arrow-down mobi-mbri"></span>
                   </a>
                 </div>
                 <div id="collapse5_2" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
                   <div class="panel-body">
-                    <p class="text-white mbr-fonts-style panel-text display-7">
+                    <p style='text-shadow: 3px 3px #000000' class="text-white mbr-fonts-style panel-text display-7">
                       Mobirise Kit is a service that provides the access to all current and new themes/extensions developed by Mobirise. New themes/extensions are released every month and will be available in your account during your plan period, without any additional charge.</p>
                   </div>
                 </div>
@@ -144,13 +144,13 @@
               <div class="card mb-3">
                 <div class="card-header" role="tab" id="headingThree">
                   <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse6_2" aria-expanded="false" aria-controls="collapse6">
-                    <h6 class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Can I create sites for commerical projects?</strong></h6>
+                    <h6 style='text-shadow: 3px 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Can I create sites for commerical projects?</strong></h6>
                     <span class="mbr-iconfont mobi-mbri-arrow-down mobi-mbri"></span>
                   </a>
                 </div>
                 <div id="collapse6_2" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
                   <div class="panel-body">
-                    <p class="text-white mbr-fonts-style panel-text display-7">
+                    <p style='text-shadow: 3px 3px #000000' class="text-white mbr-fonts-style panel-text display-7">
                       Yes, Mobirise is free for both non-profit and commercial sites.</p>
                   </div>
                 </div>
