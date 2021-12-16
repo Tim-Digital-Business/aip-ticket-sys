@@ -1,6 +1,6 @@
 <?php
-require_once "config.php";
-include_once "../navbar.php";
+require_once('config.php');
+include_once('../navbar.php');
 
 $new_abteilung = $_GET["abteilung"];
 $new_problem = $_GET["problemtxt"];

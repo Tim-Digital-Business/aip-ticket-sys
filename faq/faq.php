@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 
 <html>
-<?php include_once '../inc/head.php'; ?>
+<?php
+include_once('../inc/head.php');
+include_once('../tickets/modal-create-ticket.php');
+?>
 
 <body>
-
     <div style="margin-bottom: 60px">
         <?php include_once('../navbar.php'); ?>
     </div>

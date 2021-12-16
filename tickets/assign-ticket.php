@@ -1,11 +1,11 @@
 <?php
 //Connect DB
-require_once "../database/config.php";
+require_once '../database/config.php';
 // Check connection
 $id = $_GET['id'];
-$assignname = $_GET['assign'];
+$assignName = $_GET['assign'];
 // sql to update a record
-$sql = "UPDATE ticket_table SET Assign='$assignname' WHERE TicketID = '$id'";
+$sql = "UPDATE ticket_table SET Assign='$assignName' WHERE TicketID = '$id'";
 
 if (mysqli_query($link, $sql)) {
     mysqli_close($link);

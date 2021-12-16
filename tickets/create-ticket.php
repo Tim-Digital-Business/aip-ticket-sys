@@ -2,8 +2,10 @@
 
 <body>
     <div style="margin-bottom: 60px">
-        <?php include_once('../navbar.php');
-        include_once "../inc/head.php" ?>
+        <?php
+        include_once('../navbar.php');
+        include_once('../inc/head.php');
+        ?>
     </div>
     <title>Support Ticket erstellen</title>
 
@@ -17,7 +19,7 @@
         <?php
         require_once "../database/config.php";
         ?>
-        <form class="form-horizontal" action="../database/db_content_add.php">
+        <form class="form-horizontal" action="../database/confirm-add-ticket.php">
 
             <!-- Select Basic -->
             <div class="form-group">

@@ -7,15 +7,15 @@
         </div>
 
         <?php
-        require_once "../database/config.php";
+        require_once('../database/config.php');
         include_once('../navbar.php');
-        include_once('modal-assign.php');
-        include_once "../inc/head.php";
+        include_once('modal-assign-ticket.php');
+
         #get DB content
         $sql = "SELECT TicketID,Datum,Abteilung,Name,Problem,Assign FROM ticket_table";
         $result = $link->query($sql);
         ?>
-        <div style="margin-top: 100px;" id="accordion">
+        <main class="container" style="margin-top: 100px;">
             <?php
 
             echo "
@@ -44,7 +44,7 @@
             <td>$row[Datum]</td>
             <td>$row[Assign]</td>
             <td><button class='btn btn-info' data-toggle='modal' data-id='$row1' onclick=\"$('#dataid').text($(this).data('id'));$('#myModal2').modal('show');\">Assign</button></td>
-            <td><a href='delete.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Delete</button></a></td>
+            <td><a href='delete-ticket.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Delete</button></a></td>
                 </tr>";
             }
             echo "</tbody>
@@ -53,7 +53,7 @@
 
             ?>
 
-        </div>
+        </main>
 
     </div>
 
