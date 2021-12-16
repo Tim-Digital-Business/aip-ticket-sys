@@ -4,6 +4,7 @@
     <meta name="description" content="AIP Ticket System">
     <meta name="author" content="Tim Kunz">
     <link rel="icon" href="/assets/AIPfavicon.ico">
+    <link rel="stylesheet" href='../assets/css/styles.css'>
     <title>AIP Ticket-System</title>
 
     <!--Template based on URL below-->
