@@ -51,7 +51,8 @@ include_once('tickets/modal-create-ticket.php');
             <div style="margin-left: 15px;">
 
                 <a href="/auth/profile.php">
-                    <img src="/assets/account.svg" width="25" height="25"></a>
+                    <img src="../assets/images/account.svg" width="25" height="25">
+                </a>
             </div>
 
         </div>

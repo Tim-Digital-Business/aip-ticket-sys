@@ -41,11 +41,11 @@
     </nav>
   </section>
 
-  <section data-bs-version="5.1" class="header13 cid-sRc7vFQ6FN mbr-fullscreen mbr-parallax-background" id="header13-l">
+  <section data-bs-version="5.1" class="header13 cid-sRc7vFQ6FN mbr-fullscreen2 mbr-parallax-background" id="header13-l">
     <div class="align-center container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
-          <h1 style='text-shadow: 0 0 3px #000000' ; font-family:sans-serif' class="animate__animated animate__slideInLeft text-white mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Digital Business</strong></h1>
+          <h1 style='text-shadow: 0 0 3px #000000 ; font-family:sans-serif' class="animate__animated animate__slideInLeft text-white mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Digital Business</strong></h1>
         </div>
       </div>
     </div>

@@ -345,6 +345,9 @@ nav .mbr-section-btn {
 .mbr-fullscreen .mbr-overlay {
   min-height: 100vh;
 }
+.mbr-fullscreen2 .mbr-overlay {
+  min-height: 100vh;
+}
 
 .mbr-fullscreen {
   display: flex;
@@ -356,7 +359,16 @@ nav .mbr-section-btn {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-
+.mbr-fullscreen2 {
+  display: flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  align-items: baseline;
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 /*! Map */
 .map {
   height: 25rem;
