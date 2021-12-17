@@ -14,7 +14,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 }
 ?>
 
-<body>
+<body style='min-height: 0;'>
     <style>
         body {
             text-align: center;

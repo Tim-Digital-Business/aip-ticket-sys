@@ -8,8 +8,6 @@ include_once('tickets/modal-create-ticket.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="AIP Ticket System">
     <meta name="author" content="Tim Kunz">
-    <link rel="icon" href="/assets/AIPfavicon.ico">
-    <title>AIP Ticket-System</title>
 
     <!--Template based on URL below-->
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
@@ -36,9 +34,9 @@ include_once('tickets/modal-create-ticket.php');
                 <!-- <li class="nav-item active">
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li> -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="/faq/faq.php">FAQ</a>
-                </li>
+                </li> -->
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="/tickets/ticket-list.php" tabindex="-1">Tickets</a>
                 </li> -->
@@ -51,7 +49,8 @@ include_once('tickets/modal-create-ticket.php');
             <div style="margin-left: 15px;">
 
                 <a href="/auth/profile.php">
-                    <img src="/assets/account.svg" width="25" height="25"></a>
+                    <img src="../assets/images/account.svg" width="25" height="25">
+                </a>
             </div>
 
         </div>
