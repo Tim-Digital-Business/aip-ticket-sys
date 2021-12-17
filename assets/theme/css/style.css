@@ -671,14 +671,6 @@ input[type="range"] {
   padding-right: 0 !important;
 }
 
-.modal-dialog,
-.modal-content {
-  height: 100%;
-}
-
-.modal-dialog .carousel-inner {
-  height: calc(100vh - 1.75rem);
-}
 @media (max-width: 575px) {
   .modal-dialog .carousel-inner {
     height: calc(100vh - 1rem);
