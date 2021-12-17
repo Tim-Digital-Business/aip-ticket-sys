@@ -49,7 +49,7 @@ include_once('tickets/modal-create-ticket.php');
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
           <h1 style='text-shadow: 0 0 3px #000000 ; font-family:sans-serif' class="animate__animated animate__slideInLeft text-white mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Digital Business</strong></h1>
-          <button style='margin-top:200px;font-size: 1.5rem;' class="btn btn-primary" data-toggle="modal" data-target="#myModal" type="button">Ticket erfassen</button>
+          <button style='margin-top:200px;font-size: 1.5rem;border-radius:50px;' class="btn btn-primary" data-toggle="modal" data-target="#myModal" type="button">Ticket erfassen</button>
         </div>
       </div>
     </div>
@@ -172,7 +172,7 @@ include_once('tickets/modal-create-ticket.php');
     <p style="flex: 0 0 auto; margin:0; padding-right:1rem;">
       <a href="" style="color:#aaa;"></a>
     </p>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="assets/parallax/jarallax.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
     <script src="assets/ytplayer/index.js"></script>
