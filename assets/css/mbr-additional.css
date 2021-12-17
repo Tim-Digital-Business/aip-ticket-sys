@@ -140,7 +140,7 @@ body {
 .btn-primary.active {
   color: #ffffff !important;
   background-color: #2260d2 !important;
-  border-color: #2260d2 !important;
+  border-color: #000000 !important;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 .btn-primary.disabled,
@@ -604,7 +604,7 @@ a:hover {
 }
 .form-control {
   font-family: "Jost", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
 }

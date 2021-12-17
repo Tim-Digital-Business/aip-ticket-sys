@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<?php
+include_once('tickets/modal-create-ticket.php');
+?>
 
 <head>
   <!-- Special import coz smothscrolling is picky -->
@@ -46,6 +49,7 @@
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
           <h1 style='text-shadow: 0 0 3px #000000 ; font-family:sans-serif' class="animate__animated animate__slideInLeft text-white mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Digital Business</strong></h1>
+          <button style='margin-top:200px;font-size: 1.5rem;' class="btn btn-primary" data-toggle="modal" data-target="#myModal" type="button">Ticket erfassen</button>
         </div>
       </div>
     </div>
@@ -57,7 +61,7 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-10">
             <div class="section-head align-center mb-4">
-              <h3 style='text-shadow: 0 0 3px #000000' ;padding-right:300px' class="text-white mbr-section-title mb-0 mbr-fonts-style display-2"><strong>FAQ</strong>
+              <h3 style='text-shadow: 0 0 3px #000000;padding-right:300px' class="text-white mbr-section-title mb-0 mbr-fonts-style display-2"><strong>FAQ</strong>
               </h3>
             </div>
 
