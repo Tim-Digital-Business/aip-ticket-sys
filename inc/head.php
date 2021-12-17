@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="AIP Ticket System">
     <meta name="author" content="Tim Kunz">
-    <link rel="shortcut icon" href="../assets/images/AIPfavicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href='../assets/css/styles.css'>
     <title>AIP Ticket-System</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">

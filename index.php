@@ -8,7 +8,7 @@ include_once('tickets/modal-create-ticket.php');
   <!-- Special import coz smothscrolling is picky -->
   <title>AIP Plus</title>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" href="assets/images/AIPfavicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
@@ -32,7 +32,7 @@ include_once('tickets/modal-create-ticket.php');
       <div class="container">
         <div class="navbar-brand">
 
-          <span class="animate__animated animate__slideInDown navbar-caption-wrap"><a class="navbar-caption text-white display-7" href="https://jsw.swiss">Jugensozialwerk</a></span>
+          <span class="animate__animated animate__slideInDown navbar-caption-wrap"><a class="navbar-caption text-white display-7" href="https://www.aip.swiss">AIP Plus Pratteln</a></span>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -162,7 +162,7 @@ include_once('tickets/modal-create-ticket.php');
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0);">
       © 2022 Copyright -
-      <a class="text-white" href="https://www.aip.swiss/">Jugendsozialwerk Pratteln™ </a>
+      <a class="text-white" href="https://www.jsw.swiss">Jugendsozialwerk Pratteln™ </a>
     </div>
     <!-- Copyright -->
   </footer>
@@ -174,7 +174,6 @@ include_once('tickets/modal-create-ticket.php');
     <!-- <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="assets/parallax/jarallax.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="assets/ytplayer/index.js"></script>
     <script src="assets/dropdown/js/navbar-dropdown.js"></script>
     <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
     <script src="assets/theme/js/script.js"></script>

@@ -8,8 +8,6 @@ include_once('tickets/modal-create-ticket.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="AIP Ticket System">
     <meta name="author" content="Tim Kunz">
-    <link rel="icon" href="/assets/AIPfavicon.ico">
-    <title>AIP Ticket-System</title>
 
     <!--Template based on URL below-->
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
