@@ -1,6 +1,5 @@
 <?php
 require_once('config.php');
-include_once('../navbar.php');
 
 $new_abteilung = $_GET["abteilung"];
 $new_problem = $_GET["problemtxt"];
@@ -20,15 +19,3 @@ mysqli_close($link);
         window.history.pushState({}, "Hide", '<?php echo $_SERVER['PHP_SELF']; ?>');
     }
 </script>
-
-<html>
-
-<div class="d-flex justify-content-center" style="margin-top: 100px;">
-    <h2>Ticket wurde erfolgreich hinzugefügt!</h2>
-</div>
-<div class="d-flex justify-content-center" style="margin-top: 20px;">
-    <button class="btn btn-primary my-2 my-sm-0" type="button" onclick="window.location.href='../index.php';">Zurück
-        zur Hauptseite</button>
-</div>
-
-</html>

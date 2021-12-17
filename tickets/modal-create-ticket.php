@@ -1,3 +1,20 @@
+<?php
+require_once('database/config.php');
+
+$new_abteilung = $_GET["abteilung"];
+$new_problem = $_GET["problemtxt"];
+$new_name = $_GET["nametxt"];
+$new_abteilung = addslashes($new_abteilung);
+$new_problem = addslashes($new_problem);
+$new_name = addslashes($new_name);
+
+#get DB content
+$sql = "INSERT into ticket_table(TicketID,Abteilung,Name,Problem) VALUES(null,'$new_abteilung','$new_name','$new_problem')";
+$result = $link->query($sql);
+mysqli_close($link);
+?>
+
+
 <div class="modal fade" id="myModal">
     <div class="modal-dialog">
         <div class="modal-content" style="color:black;">
@@ -9,7 +26,7 @@
 
             <!-- Modal body -->
             <div class="modal-body" style="text-align: initial;">
-                <form action="../database/confirm-add-ticket.php">
+                <form>
                     <input class="form-control" type="hidden" name="id">
                     <div class="form-group">
                         <label>Name:*</label>
@@ -36,6 +53,14 @@
                     <button type="submit" class="btn btn-primary float-left" id="createTicket">Erstellen</button>
                     <button type="button" class="btn btn-danger float-right" data-dismiss="modal">Close</button>
                 </form>
+                <script>
+                    $('#createTicket').click(function() {
+                        setTimeout(function() {
+                            $('#createTicket').modal('hide');
+                        }, 4000);
+
+                    });
+                </script>
 
 
             </div>

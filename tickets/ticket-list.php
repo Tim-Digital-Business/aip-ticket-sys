@@ -10,6 +10,7 @@
         require_once('../database/config.php');
         include_once('../navbar.php');
         include_once('modal-assign-ticket.php');
+        include_once('modal-delete-ticket.php');
 
         #get DB content
         $sql = "SELECT TicketID,Datum,Abteilung,Name,Problem,Assign FROM ticket_table";
@@ -44,7 +45,7 @@
             <td>$row[Datum]</td>
             <td>$row[Assign]</td>
             <td><button class='btn btn-info' data-toggle='modal' data-id='$row1' onclick=\"$('#dataid').text($(this).data('id'));$('#myModal2').modal('show');\">Assign</button></td>
-            <td><a href='delete-ticket.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Delete</button></a></td>
+            <td><a data-toggle='modal' data-target='#confirm-delete' data-href='delete-ticket.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Delete</button></a></td>
                 </tr>";
             }
             echo "</tbody>
