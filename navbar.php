@@ -36,9 +36,9 @@ include_once('tickets/modal-create-ticket.php');
                 <!-- <li class="nav-item active">
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li> -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="/faq/faq.php">FAQ</a>
-                </li>
+                </li> -->
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="/tickets/ticket-list.php" tabindex="-1">Tickets</a>
                 </li> -->

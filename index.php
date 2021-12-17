@@ -44,12 +44,12 @@ include_once('tickets/modal-create-ticket.php');
     </nav>
   </section>
 
-  <section data-bs-version="5.1" class="header13 cid-sRc7vFQ6FN mbr-fullscreen2 mbr-parallax-background" id="header13-l">
+  <section data-bs-version="5.1" class="header13 cid-sRc7vFQ6FN mbr-fullscreen mbr-parallax-background" id="header13-l">
     <div class="align-center container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
           <h1 style='text-shadow: 0 0 3px #000000 ; font-family:sans-serif' class="animate__animated animate__slideInLeft text-white mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Digital Business</strong></h1>
-          <button style='margin-top:200px;font-size: 1.5rem;border-radius:50px;' class="btn btn-primary" data-toggle="modal" data-target="#myModal" type="button">Ticket erfassen</button>
+          <button class="button-28 animate__animated animate__fadeInBottomLeft" data-toggle="modal" data-target="#myModal" type="button">Ticket erfassen</button>
         </div>
       </div>
     </div>
@@ -69,22 +69,21 @@ include_once('tickets/modal-create-ticket.php');
               <div class="card mb-3">
                 <div class="card-header" role="tab" id="headingOne">
                   <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_2" aria-expanded="true" aria-controls="collapse1">
-                    <h6 style='text-shadow: 0 0 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>How to create more items in this list?</strong>
+                    <h6 style='text-shadow: 0 0 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Wie wird ein Ticket erstellt?</strong>
                     </h6>
                     <span class="sign mbr-iconfont mbri-arrow-down"></span>
                   </a>
                 </div>
                 <div id="collapse1_2" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
                   <div class="panel-body">
-                    <p style='text-shadow: 0 0 3px #000000' class="text-white mbr-fonts-style panel-text display-7">The number of items is limited in this block. Open
-                      the Block parameters to change the amount of items.</p>
+                    <p style='text-shadow: 0 0 3px #000000;background-color: #00000075;border-radius: 10px;padding-left: 10px;' class="text-white mbr-fonts-style panel-text display-7">Klick auf den Knopf "Ticket erfassen" und gib die erforderlichen Daten ein. Danach klick auf "Erstellen" und schon ist es erstellt.</p>
                   </div>
                 </div>
               </div>
               <div class="card mb-3">
                 <div class="card-header" role="tab" id="headingTwo">
                   <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_2" aria-expanded="false" aria-controls="collapse2">
-                    <h6 style='text-shadow: 0 0 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>What is Mobirise Kit?</strong>
+                    <h6 style='text-shadow: 0 0 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Wie lange dauert es bis ich eine Antwort bekomme?</strong>
                     </h6>
                     <span class="sign mbr-iconfont mbri-arrow-down"></span>
                   </a>
@@ -92,11 +91,11 @@ include_once('tickets/modal-create-ticket.php');
                 </div>
                 <div id="collapse2_2" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
                   <div class="panel-body">
-                    <p style='text-shadow: 0 0 3px #000000' class="text-white mbr-fonts-style panel-text display-7">Mobirise Kit is a service that provides the access to all current and new themes/extensions developed by Mobirise. New themes/extensions are released every month and will be available in your account during your plan period, without any additional charge.</p>
+                    <p style='text-shadow: 0 0 3px #000000;background-color: #00000075;border-radius: 10px;padding-left: 10px;' class="text-white mbr-fonts-style panel-text display-7">Wir werden dich so schnell wie möglich Kontaktieren und eine Lösung für dein Problem finden. Gerne kannst du auch in unsere Abteilung vorbeischauen.</p>
                   </div>
                 </div>
               </div>
-              <div class="card mb-3">
+              <!-- <div class="card mb-3">
                 <div class="card-header" role="tab" id="headingThree">
                   <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_2" aria-expanded="false" aria-controls="collapse3">
                     <h6 style='text-shadow: 0 0 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Can I create sites for commerical projects?</strong>
@@ -150,12 +149,12 @@ include_once('tickets/modal-create-ticket.php');
                   <div class="panel-body">
                     <p style='text-shadow: 0 0 3px #000000' class="text-white mbr-fonts-style panel-text display-7">
                       Yes, Mobirise is free for both non-profit and commercial sites.</p>
-                  </div>
-                </div>
-              </div>
+                  </div> -->
             </div>
           </div>
         </div>
+      </div>
+      </div>
       </div>
     </section>
   </section>
