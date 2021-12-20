@@ -17,7 +17,7 @@ require_once('modal-confirm-ticket.php');
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Ticket erstellen</h4>
+                <h4 class="modal-title">Neues Ticket erfassen</h4>
             </div>
 
             <!-- Modal body -->
@@ -47,7 +47,7 @@ require_once('modal-confirm-ticket.php');
                         <textarea class="form-control" type="text" id="problemtxt" name="problemtxt" rows="4"
                             required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary float-left" id="createTicket">Erstellen</button>
+                    <button type="submit" class="btn btn-primary float-left" id="createTicket">Erfassen</button>
                     <button type="button" class="btn btn-danger float-right" data-dismiss="modal"
                         id="cancel-btn">Zurück</button>
                 </form>

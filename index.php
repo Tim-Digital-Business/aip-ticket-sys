@@ -88,7 +88,7 @@ include_once('tickets/modal-create-ticket.php');
                                         aria-controls="collapse1">
                                         <h6 style='text-shadow: 0 0 3px #000000'
                                             class="text-white panel-title-edit mbr-fonts-style mb-0 display-7">
-                                            <strong>Wie wird ein Ticket erstellt?</strong>
+                                            <strong>Wie wird ein Ticket erfasst?</strong>
                                         </h6>
                                         <span class="sign mbr-iconfont mbri-arrow-down"></span>
                                     </a>
@@ -99,7 +99,7 @@ include_once('tickets/modal-create-ticket.php');
                                         <p style='text-shadow: 0 0 3px #000000;background-color: #00000075;border-radius: 10px;padding-left: 10px;'
                                             class="text-white mbr-fonts-style panel-text display-7">Klick auf den Knopf
                                             "Ticket erfassen" und gib die erforderlichen Daten ein. Danach klick auf
-                                            "Erstellen" und schon ist es erstellt.</p>
+                                            "Erfassen" und schon ist es erfasst.</p>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@ include_once('tickets/modal-create-ticket.php');
                                         aria-controls="collapse2">
                                         <h6 style='text-shadow: 0 0 3px #000000'
                                             class="text-white panel-title-edit mbr-fonts-style mb-0 display-7">
-                                            <strong>Wie lange dauert es bis ich eine Antwort bekomme?</strong>
+                                            <strong>Wie lange dauert es bis ich eine Antwort erhalte?</strong>
                                         </h6>
                                         <span class="sign mbr-iconfont mbri-arrow-down"></span>
                                     </a>

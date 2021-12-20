@@ -14,13 +14,13 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Ticket erfolgreich erstellt!</h4>
+                <h4 class="modal-title">Ticket erfolgreich erfasst!</h4>
             </div>
 
             <!-- Modal body -->
             <div class="modal-body" style="text-align: initial;">
                 <div class="d-flex justify-content-center">
-                    <h5>Dein Ticket wurde erfolgreich erstellt!</h5>
+                    <h5>Dein Ticket wurde erfolgreich erfasst!</h5>
                 </div>
 
                 <div class="d-flex justify-content-center">

@@ -16,18 +16,19 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 <body style='min-height: 0;'>
     <style>
-        body {
-            text-align: center;
-            margin-top: 100px;
-        }
+    body {
+        text-align: center;
+        margin-top: 100px;
+    }
     </style>
-    <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to the Admin Page.
+    <h1 class="my-5">Hey, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Willkommen zur Admin Seite.
     </h1>
     <p>
-        <a href="register.php" class="btn btn-primary">Add User</a>
-        <a href="#" data-toggle="modal" data-target="#resetModal" class="btn btn-warning ml-3">Reset Your Password</a>
-        <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
-        <a href="../tickets/ticket-list.php" class="btn btn-info ml-3">Open Ticket Site</a>
+        <a href="register.php" class="btn btn-primary">Benutzer hinzufügen </a>
+        <a href="#" data-toggle="modal" data-target="#resetModal" class="btn btn-warning ml-3">Passwort
+            resetten</a>
+        <a href="logout.php" class="btn btn-danger ml-3">Logout</a>
+        <a href="../tickets/ticket-list.php" class="btn btn-info ml-3">Übersicht Ticket Liste</a>
     </p>
 </body>
 
