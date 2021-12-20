@@ -1,8 +1,9 @@
-<!DOCTYPE html>
-<html>
 <?php
 include_once('tickets/modal-create-ticket.php');
 ?>
+
+<!DOCTYPE html>
+<html>
 
 <head>
   <!-- Special import coz smothscrolling is picky -->
@@ -171,6 +172,8 @@ include_once('tickets/modal-create-ticket.php');
     <p style="flex: 0 0 auto; margin:0; padding-right:1rem;">
       <a href="" style="color:#aaa;"></a>
     </p>
+
+
     <!-- <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="assets/parallax/jarallax.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
@@ -178,9 +181,6 @@ include_once('tickets/modal-create-ticket.php');
     <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
     <script src="assets/theme/js/script.js"></script>
   </section>
-
-
-
 </body>
 
 </html>
