@@ -5,6 +5,7 @@
         <div class="text-center mt-5 pt-5">
             <h3>Ticket Liste</h3>
         </div>
+        <input class="form-control" id="myInput" type="text" placeholder="Search..">
 
         <?php
         require_once('../database/config.php');
@@ -16,7 +17,7 @@
         $sql = "SELECT TicketID,Datum,Abteilung,Name,Problem,Assign FROM ticket_table";
         $result = $link->query($sql);
         ?>
-        <main class="container" style="margin-top: 50px; overflow-y: auto; height: calc(100vh - 200px);">
+        <main class="container" style="margin-top: 25px; overflow-y: auto; height: calc(100vh - 210px);">
             <?php
 
             echo "
@@ -37,6 +38,7 @@
             while ($row = $result->fetch_assoc()) {
                 $ticketID = $row['TicketID'];
                 echo "
+        <tbody id='myTable'>        
         <tr>
             <th scope='row'>$row[TicketID]</th>
             <td>$row[Abteilung]</td>
@@ -59,3 +61,14 @@
     </div>
 
 </body>
+<!-- Search Ticket Table -->
+<script>
+$(document).ready(function() {
+    $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+});
+</script>

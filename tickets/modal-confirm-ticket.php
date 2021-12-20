@@ -23,14 +23,13 @@
                     <h5>Dein Ticket wurde erfolgreich erfasst!</h5>
                 </div>
 
-                <div class="d-flex justify-content-center">
-                    <img src="../assets/images/checked.png" alt="checked.png"
-                        style="height: 80px; width: 80px; margin-top: 10px; margin-bottom: 10px;">
+                <div class="d-flex justify-content-center m-4">
+                    <img src="../assets/images/checked.png" alt="checked.png" style="height: 80px; width: 80px;">
                 </div>
 
                 <p class="d-flex justify-content-center">Wir werden dein Anliegen so schnell wie möglich bearbeiten.</p>
 
-                <div class="d-flex justify-content-center" style="margin-top: 20px;">
+                <div class="d-flex justify-content-center mt-2">
                     <button class="btn btn-primary my-2 my-sm-0" type="button" data-dismiss="modal"
                         onclick="closeModal()">Zurück
                         zur Hauptseite</button>
