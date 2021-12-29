@@ -1,5 +1,5 @@
 <?php require_once "../database/config.php"; ?>
-<div class="modal fade" id="myModal2">
+<div class="modal fade" id="modalAssignTicket">
     <div class="modal-dialog">
         <div class="modal-content">
             <!-- Modal Header -->
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <input type='hidden' id="dataid" value=''>
-                    <button type='submit' id='submitButton' onclick='submitHandler()' class="btn btn-primary">Zuordnen</button>
+                    <button type='submit' id='submitButton' onclick='submitHandler()' class="btn btn-primary">Assign</button>
                     <button type="button" class="btn btn-danger float-right" data-dismiss="modal">Close</button>
                 </form>
                 <script>
@@ -34,7 +34,6 @@
                         submitVal = $('#dataid').text();
                         $('#myForm').append("<input type='hidden' name='id' value='" +
                             submitVal + "' />");
-                        console.log(submitVal);
                         return true;
                     }
                 </script>
@@ -43,6 +42,7 @@
         </div>
     </div>
 </div>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
 </script>
