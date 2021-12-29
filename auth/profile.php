@@ -16,12 +16,12 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 <body style='min-height: 0;'>
     <style>
-    body {
-        text-align: center;
-        margin-top: 100px;
-    }
+        body {
+            text-align: center;
+            margin-top: 100px;
+        }
     </style>
-    <h1 class="my-5">Hey, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Willkommen zur Admin Seite.
+    <h1 class="my-5">Hey, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>.
     </h1>
     <p>
         <a href="register.php" class="btn btn-primary">Benutzer hinzufügen </a>

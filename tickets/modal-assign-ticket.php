@@ -26,8 +26,8 @@
                         </div>
                     </div>
                     <input type='hidden' id="dataid" value=''>
-                    <button type='submit' id='submitButton' onclick='submitHandler()' class="btn btn-primary">Assign</button>
-                    <button type="button" class="btn btn-danger float-right" data-dismiss="modal">Close</button>
+                    <button type='submit' id='submitButton' onclick='submitHandler()' class="btn btn-primary">Zuordnen</button>
+                    <button type="button" class="btn btn-danger float-right" data-dismiss="modal">Schliessen</button>
                 </form>
                 <script>
                     function submitHandler() {

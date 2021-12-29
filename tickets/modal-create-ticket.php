@@ -21,7 +21,7 @@
                     <input class="form-control" type="hidden" name="id">
                     <div class="form-group">
                         <label>Name:*</label>
-                        <input class="form-control" type="text" name="nametxt" id="nametxt" required>
+                        <input class="form-control" placeholder='z.B. Marcel Hauser' type="text" name="nametxt" id="nametxt" required>
                     </div>
                     <div class="form-group">
                         <label col-md-4 control-label>Abteilung:*</label>
@@ -39,7 +39,7 @@
                     </div>
                     <div class="form-group" required>
                         <label for="address">Problem:*</label>
-                        <textarea class="form-control" type="text" id="problemtxt" name="problemtxt" rows="4" required></textarea>
+                        <textarea placeholder='z.B. Die Taste "P" funktioniert nicht mehr auf meiner Tastatur.' class="form-control" type="text" id="problemtxt" name="problemtxt" rows="4" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary float-left" id="createTicket">Erfassen</button>
                     <button type="button" class="btn btn-danger float-right" data-dismiss="modal" id="cancel-btn">Zurück</button>
