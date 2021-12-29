@@ -14,7 +14,7 @@
                         <label col-md-4 control-label>Zuordnen:*</label>
                         <div>
                             <select name="assign" required>
-                                <option value="Babete">Babete</option>
+                                <option value="Babete">Babette</option>
                                 <option value="Jessica">Jessica</option>
                                 <option value="Josua">Josua</option>
                                 <option value="Lorenzo">Lorenzo</option>
