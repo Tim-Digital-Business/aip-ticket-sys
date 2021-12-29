@@ -16,9 +16,7 @@
 </head>
 
 <?php
-
 //get content by selecting clicking "seach" in index2
-
 require_once "config.php";
 $new_abteilung = $_GET["Abteilung"];
 $sql = "SELECT TicketID,Datum,Abteilung,Name,Problem FROM ticket_table WHERE Abteilung LIKE '$new_abteilung'";
