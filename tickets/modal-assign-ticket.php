@@ -13,8 +13,8 @@
                     <div class="form-group">
                         <label col-md-4 control-label>Zuordnen:*</label>
                         <div>
-                            <select name="assign" required>
-                                <option value="Babete">Babette</option>
+                            <select class="form-select" name="assign" required>
+                                <option value="Babette">Babette</option>
                                 <option value="Jessica">Jessica</option>
                                 <option value="Josua">Josua</option>
                                 <option value="Lorenzo">Lorenzo</option>
