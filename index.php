@@ -82,7 +82,7 @@ include_once('tickets/modal-create-ticket.php');
                   <div class="panel-body">
                     <p style='text-shadow: 0 0 3px #000000;background-color: #00000075;border-radius: 10px;padding-left: 10px;' class="text-white mbr-fonts-style panel-text display-7">Klick auf den Knopf
                       "Ticket erfassen" und gib die erforderlichen Daten ein. Danach klick auf
-                      "Erfassen" und schon ist es erfast.</p>
+                      "Erfassen" und schon ist es erfasst.</p>
                   </div>
                 </div>
               </div>
