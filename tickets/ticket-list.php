@@ -21,23 +21,23 @@
 
             echo "
   <table id='table' class='display'>
-      <thead class='thead-dark'>
+      <thead>
           <tr>
-              <th scope='col'>Ticket ID</th>
-              <th scope='col'>Abteilung</th>
-              <th scope='col'>Name</th>
-              <th scope='col'>Problem</th>
-              <th scope='col'>Erfasst am</th>
-              <th scope='col'>Bearbeitet von</th>
-              <th scope='col'></th>
-              <th scope='col'></th>
+              <th>Ticket ID</th>
+              <th>Abteilung</th>
+              <th>Name</th>
+              <th>Problem</th>
+              <th>Erfasst am</th>
+              <th>Bearbeitet von</th>
+              <th></th>
+              <th></th>
           </tr>
       </thead>";
 
             while ($row = $result->fetch_assoc()) {
                 $ticketID = $row['TicketID'];
                 echo "
-        <tbody id='myTable'>        
+        <tbody>        
         <tr>
             <th scope='row'>$row[TicketID]</th>
             <td>$row[Abteilung]</td>
@@ -47,9 +47,10 @@
             <td>$row[Assign]</td>
             <td><button class='btn btn-info' data-toggle='modal' data-id='$ticketID' onclick=\"$('#dataid').text($(this).data('id'));$('#modalAssignTicket').modal('show');\">Assign</button></td>
             <td><a data-toggle='modal' data-target='#confirm-delete' data-href='delete-ticket.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Delete</button></a></td>
-                </tr>";
+                </tr>
+                </tbody>";
             }
-            echo "</tbody>
+            echo "
   </table>";
             ?>
 
@@ -62,7 +63,12 @@
         $('#table').DataTable({
             "order": [
                 [3, "desc"]
-            ]
+            ],
+            "columnDefs": [{
+                "targets": [6],
+                "ordering": false,
+
+            }]
         });
     });
 </script>
