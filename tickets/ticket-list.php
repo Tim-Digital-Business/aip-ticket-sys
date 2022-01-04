@@ -1,5 +1,16 @@
-<body>
+<?php
+require_once('../database/config.php');
+include_once('../navbar.php');
+include_once('modal-delete-ticket.php');
+include_once('modal-assign-ticket.php');
+?>
 
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js">
+</script>
+
+<body>
     <div class="container">
 
         <div class="text-center mt-5 pt-5">
@@ -7,12 +18,6 @@
         </div>
 
         <?php
-        require_once('../database/config.php');
-        include_once('../navbar.php');
-        include_once('modal-delete-ticket.php');
-        include_once('modal-assign-ticket.php');
-
-
         #get DB content
         $sql = "SELECT TicketID,Datum,Abteilung,Name,Problem,Assign FROM ticket_table";
         $result = $link->query($sql);
@@ -62,11 +67,16 @@
 <script>
     $(document).ready(function() {
         $('#table').DataTable({
-            "order": [
-                [3, "desc"]
-            ],
+            columnDefs: [{
+                targets: [0],
+                orderData: [0, 1]
+            }, {
+                targets: [1],
+                orderData: [1, 0]
+            }, {
+                targets: [4],
+                orderData: [4, 0]
+            }]
         });
     });
 </script>
-<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
-<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
