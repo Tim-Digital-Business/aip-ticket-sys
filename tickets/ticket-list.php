@@ -1,18 +1,24 @@
-<body>
+<?php
+require_once('../database/config.php');
+include_once('../navbar.php');
+include_once('modal-delete-ticket.php');
+include_once('modal-assign-ticket.php');
+?>
 
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.11.3/sorting/any-number.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.11.3/sorting/natural.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.11.3/sorting/date-de.js"></script>
+
+<body>
     <div class="container">
 
         <div class="text-center mt-5 pt-5">
             <h3>Ticket Liste</h3>
         </div>
-        <input class="form-control" id="myInput" type="text" placeholder="Search..">
 
         <?php
-        require_once('../database/config.php');
-        include_once('../navbar.php');
-        include_once('modal-assign-ticket.php');
-        include_once('modal-delete-ticket.php');
-
         #get DB content
         $sql = "SELECT TicketID,Datum,Abteilung,Name,Problem,Assign FROM ticket_table";
         $result = $link->query($sql);
@@ -21,24 +27,25 @@
             <?php
 
             echo "
-  <table class='table'>
-      <thead class='thead-dark'>
+  <table id='table1' class='display'>
+      <thead>
           <tr>
-              <th scope='col'>Ticket ID</th>
-              <th scope='col'>Abteilung</th>
-              <th scope='col'>Name</th>
-              <th scope='col'>Problem</th>
-              <th scope='col'>Erfasst am</th>
-              <th scope='col'>Bearbeitet von</th>
-              <th scope='col'></th>
-              <th scope='col'></th>
+              <th>Ticket ID</th>
+              <th>Abteilung</th>
+              <th>Name</th>
+              <th>Problem</th>
+              <th>Erfasst am</th>
+              <th>Bearbeitet von</th>
+              <th></th>
+              <th></th>
           </tr>
-      </thead>";
+      </thead>
+      <tbody> ";
 
             while ($row = $result->fetch_assoc()) {
                 $ticketID = $row['TicketID'];
                 echo "
-        <tbody id='myTable'>        
+               
         <tr>
             <th scope='row'>$row[TicketID]</th>
             <td>$row[Abteilung]</td>
@@ -46,11 +53,13 @@
             <td>$row[Problem]</td>
             <td>$row[Datum]</td>
             <td>$row[Assign]</td>
-            <td><button class='btn btn-info' data-toggle='modal' data-id='$ticketID' onclick=\"$('#dataid').text($(this).data('id'));$('#modalAssignTicket').modal('show');\">Assign</button></td>
-            <td><a data-toggle='modal' data-target='#confirm-delete' data-href='delete-ticket.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Delete</button></a></td>
-                </tr>";
+            <td><button class='btn btn-info' data-toggle='modal' data-id='$ticketID' onclick=\"$('#dataid').text($(this).data('id'));$('#modalAssignTicket').modal('show');\">Zuordnen</button></td>
+            <td><a data-toggle='modal' data-target='#confirm-delete' data-href='delete-ticket.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Löschen</button></a></td>
+                </tr>
+                ";
             }
-            echo "</tbody>
+            echo "
+            </tbody>
   </table>";
             ?>
 
@@ -60,11 +69,20 @@
 <!-- Search Ticket Table -->
 <script>
     $(document).ready(function() {
-        $("#myInput").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $("#myTable tr").filter(function() {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
+        $('#table1').dataTable({
+            "columnDefs": [{
+                    "type": "any-number",
+                    targets: 0
+                },
+                {
+                    "type": "natural",
+                    targets: 1
+                },
+                {
+                    "type": "date-de",
+                    targets: 4
+                },
+            ]
         });
     });
 </script>
