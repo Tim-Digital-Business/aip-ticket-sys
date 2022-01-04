@@ -9,8 +9,9 @@
         <?php
         require_once('../database/config.php');
         include_once('../navbar.php');
-        include_once('modal-assign-ticket.php');
         include_once('modal-delete-ticket.php');
+        include_once('modal-assign-ticket.php');
+
 
         #get DB content
         $sql = "SELECT TicketID,Datum,Abteilung,Name,Problem,Assign FROM ticket_table";
@@ -64,11 +65,6 @@
             "order": [
                 [3, "desc"]
             ],
-            "columnDefs": [{
-                "targets": [6],
-                "ordering": false,
-
-            }]
         });
     });
 </script>
