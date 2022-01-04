@@ -9,8 +9,8 @@
                 <p>Dies kann <strong>nicht</strong> rückgängig gemacht werden!</p>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-danger btn-ok">Delete</a>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-danger btn-ok">Löschen</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
             </div>
         </div>
     </div>
