@@ -6,8 +6,10 @@ include_once('modal-assign-ticket.php');
 ?>
 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
-<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js">
-</script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.11.3/sorting/any-number.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.11.3/sorting/natural.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.11.3/sorting/date-de.js"></script>
 
 <body>
     <div class="container">
@@ -67,9 +69,19 @@ include_once('modal-assign-ticket.php');
 <!-- Search Ticket Table -->
 <script>
     $(document).ready(function() {
-        $('#table1').DataTable({
-            "order": [
-                [0, "desc"]
+        $('#table1').dataTable({
+            "columnDefs": [{
+                    "type": "any-number",
+                    targets: 0
+                },
+                {
+                    "type": "natural",
+                    targets: 1
+                },
+                {
+                    "type": "date-de",
+                    targets: 4
+                },
             ]
         });
     });
