@@ -5,7 +5,6 @@
         <div class="text-center mt-5 pt-5">
             <h3>Ticket Liste</h3>
         </div>
-        <input class="form-control" id="myInput" type="text" placeholder="Search..">
 
         <?php
         require_once('../database/config.php');
@@ -21,7 +20,7 @@
             <?php
 
             echo "
-  <table class='table'>
+  <table id='table' class='display'>
       <thead class='thead-dark'>
           <tr>
               <th scope='col'>Ticket ID</th>
@@ -60,11 +59,12 @@
 <!-- Search Ticket Table -->
 <script>
     $(document).ready(function() {
-        $("#myInput").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $("#myTable tr").filter(function() {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
+        $('#table').DataTable({
+            "order": [
+                [3, "desc"]
+            ]
         });
     });
 </script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
