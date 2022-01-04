@@ -26,7 +26,8 @@
                     <div class="form-group">
                         <label col-md-4 control-label>Abteilung:*</label>
                         <div>
-                            <select name="abteilung" id="abteilung" required>
+                            <select class="form-select" name="abteilung" id="abteilung" required>
+                                <option selected value="">Bitte Abteilung auswählen.</option>
                                 <option value="Digital Business">Digital Business</option>
                                 <option value="Liegenschaftsservice">Liegenschaftsservice</option>
                                 <option value="Verwaltung">Verwaltung</option>
