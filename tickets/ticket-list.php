@@ -6,7 +6,6 @@ include_once('modal-assign-ticket.php');
 ?>
 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
-
 <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js">
 </script>
 
@@ -26,7 +25,7 @@ include_once('modal-assign-ticket.php');
             <?php
 
             echo "
-  <table id='table' class='display'>
+  <table id='table1' class='display'>
       <thead>
           <tr>
               <th>Ticket ID</th>
@@ -38,12 +37,13 @@ include_once('modal-assign-ticket.php');
               <th></th>
               <th></th>
           </tr>
-      </thead>";
+      </thead>
+      <tbody> ";
 
             while ($row = $result->fetch_assoc()) {
                 $ticketID = $row['TicketID'];
                 echo "
-        <tbody>        
+               
         <tr>
             <th scope='row'>$row[TicketID]</th>
             <td>$row[Abteilung]</td>
@@ -54,9 +54,10 @@ include_once('modal-assign-ticket.php');
             <td><button class='btn btn-info' data-toggle='modal' data-id='$ticketID' onclick=\"$('#dataid').text($(this).data('id'));$('#modalAssignTicket').modal('show');\">Assign</button></td>
             <td><a data-toggle='modal' data-target='#confirm-delete' data-href='delete-ticket.php?id=" . $row['TicketID'] . "'><button class='btn btn-danger' >Delete</button></a></td>
                 </tr>
-                </tbody>";
+                ";
             }
             echo "
+            </tbody>
   </table>";
             ?>
 
@@ -66,17 +67,10 @@ include_once('modal-assign-ticket.php');
 <!-- Search Ticket Table -->
 <script>
     $(document).ready(function() {
-        $('#table').DataTable({
-            columnDefs: [{
-                targets: [0],
-                orderData: [0, 1]
-            }, {
-                targets: [1],
-                orderData: [1, 0]
-            }, {
-                targets: [4],
-                orderData: [4, 0]
-            }]
+        $('#table1').DataTable({
+            "order": [
+                [0, "desc"]
+            ]
         });
     });
 </script>
