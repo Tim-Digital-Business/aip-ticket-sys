@@ -1,6 +1,5 @@
 <?php
 include_once('../navbar.php');
-include_once('../inc/head.php');
 include_once('modal-reset-password.php');
 // Initialize the session
 if (!isset($_SESSION)) {
