@@ -4,6 +4,42 @@ include_once('tickets/modal-create-ticket.php');
 
 <!DOCTYPE html>
 <html>
+<style>
+  .slide_bg {
+
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBG 60s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('assets/images/home.jpg');
+  }
+
+  @keyframes slideBG {
+    0% {
+      background-image: url('assets/images/home.jpg');
+    }
+
+    25% {
+      background-image: url('assets/images/home.jpg'), url('assets/images/nebula.jpg');
+    }
+
+    50% {
+      background-image: url('assets/images/nebula.jpg');
+    }
+
+    75% {
+      background-image: url('assets/images/nebula.jpg'), url('assets/images/home.jpg');
+    }
+
+    100% {
+      background-image: url('assets/images/home.jpg');
+    }
+  }
+</style>
 
 <head>
   <!-- Special import coz smothscrolling is picky -->
@@ -45,7 +81,7 @@ include_once('tickets/modal-create-ticket.php');
     </nav>
   </section>
 
-  <section data-bs-version="5.1" class="header13 cid-sRc7vFQ6FN mbr-fullscreen mbr-parallax-background" id="header13-l">
+  <section data-bs-version="5.1" class="slide_bg header13 cid-sRc7vFQ6FN mbr-fullscreen" id="header13-l">
     <div class="align-center container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
