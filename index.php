@@ -88,7 +88,7 @@ include_once('tickets/modal-create-ticket.php');
           <h1 style='text-shadow: 0 0 3px #000000 ; font-family:sans-serif' class="animate__animated animate__slideInLeft text-white mbr-section-title mbr-fonts-style mb-3 display-1">
             <strong>Digital Business</strong>
           </h1>
-          <button class="button-28 animate__animated animate__fadeInBottomLeft" data-toggle="modal" data-target="#modalCreateTicket" type="button">Ticket erfassen</button>
+          <button class="button-28 animate__animated animate__fadeInBottomLeft" data-toggle="modal" data-target="#modalCreateTicket" type="button">Problem melden</button>
         </div>
       </div>
     </div>
@@ -109,7 +109,7 @@ include_once('tickets/modal-create-ticket.php');
                 <div class="card-header" role="tab" id="headingOne">
                   <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_2" aria-expanded="true" aria-controls="collapse1">
                     <h6 style='text-shadow: 0 0 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7">
-                      <strong>Wie wird ein Ticket erfasst?</strong>
+                      <strong>Wie wird ein Problem gemolden?</strong>
                     </h6>
                     <span class="sign mbr-iconfont mbri-arrow-down"></span>
                   </a>
@@ -117,7 +117,7 @@ include_once('tickets/modal-create-ticket.php');
                 <div id="collapse1_2" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
                   <div class="panel-body">
                     <p style='text-shadow: 0 0 3px #000000;background-color: #00000075;border-radius: 10px;padding-left: 10px;' class="text-white mbr-fonts-style panel-text display-7">Klick auf den Knopf
-                      "Ticket erfassen" und gib die erforderlichen Daten ein. Danach klick auf
+                      "Problem melden" und gib die erforderlichen Daten ein. Danach klick auf
                       "Erfassen" und schon ist es erfasst.</p>
                   </div>
                 </div>
