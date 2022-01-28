@@ -1,6 +1,5 @@
 <?php
 include_once('../navbar.php');
-include_once('../inc/head.php');
 include_once('modal-reset-password.php');
 // Initialize the session
 if (!isset($_SESSION)) {
@@ -29,6 +28,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             resetten</a>
         <a href="logout.php" class="btn btn-danger ml-3">Logout</a>
         <a href="../tickets/ticket-list.php" class="btn btn-info ml-3">Übersicht Ticket Liste</a>
+        <a href="../tickets/ticket-list-bildschirm.php" class="btn btn-info ml-3">Übersicht Ticket Liste(Bildschirm)</a>
     </p>
 </body>
 

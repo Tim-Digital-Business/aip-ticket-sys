@@ -11,9 +11,9 @@
                 <form id='myForm' action='assign-ticket.php'>
                     <input class="form-control" type="hidden">
                     <div class="form-group">
-                        <label style='margin-left:170px' col-md-4 control-label>Zuordnen:*</label>
+                        <label col-md-4 control-label>Zuordnen:*</label>
                         <div>
-                            <select class="form-select" style='margin-left:120px' name="assign" required>
+                            <select class="form-control" name="assign" required>
                                 <option value="">Bitte Jemanden wählen</option>
                                 <option value="Babette">Babette</option>
                                 <option value="Jessica">Jessica</option>
@@ -23,6 +23,7 @@
                                 <option value="Sammy">Sammy</option>
                                 <option value="Tim">Tim</option>
                                 <option value="Ulf">Ulf</option>
+                                <option value=" ">Freigeben</option>
                             </select>
                         </div>
                     </div>
