@@ -28,6 +28,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             resetten</a>
         <a href="logout.php" class="btn btn-danger ml-3">Logout</a>
         <a href="../tickets/ticket-list.php" class="btn btn-info ml-3">Übersicht Ticket Liste</a>
+        <a href="../tickets/ticket-list-bildschirm.php" class="btn btn-info ml-3">Übersicht Ticket Liste(Bildschirm)</a>
     </p>
 </body>
 
