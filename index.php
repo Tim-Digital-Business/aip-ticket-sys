@@ -109,7 +109,7 @@ include_once('tickets/modal-create-ticket.php');
                 <div class="card-header" role="tab" id="headingOne">
                   <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_2" aria-expanded="true" aria-controls="collapse1">
                     <h6 style='text-shadow: 0 0 3px #000000' class="text-white panel-title-edit mbr-fonts-style mb-0 display-7">
-                      <strong>Wie wird ein Problem gemolden?</strong>
+                      <strong>Wie kann ich ein Problem melden?</strong>
                     </h6>
                     <span class="sign mbr-iconfont mbri-arrow-down"></span>
                   </a>
