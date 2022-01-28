@@ -1,4 +1,4 @@
-# profile to AIP Ticket System 👋
+# AIP Ticket System 👋
 
 > Ticket Management Service for IT Support Requests
 
