@@ -20,4 +20,4 @@
 
 ## 📝 License
 
-Free use, just credit me :) [Tim Kunz](https://github.com/Tim-Digital-Business).<br />
+Free use, just credit [me](https://github.com/Tim-Digital-Business) :).<br />
