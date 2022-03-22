@@ -20,4 +20,4 @@
 
 ## 📝 License
 
-Copyright © 2021 [Tim Kunz](https://github.com/Tim-Digital-Business).<br />
+Free use, just credit me :) [Tim Kunz](https://github.com/Tim-Digital-Business).<br />
